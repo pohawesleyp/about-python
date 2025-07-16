@@ -7,4 +7,17 @@ class Animal:
 
 a1 =  Animal('grilo')
 
-print(a1)
+print(f"O {a1.fala()}")
+
+
+
+class Cachorro:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def fala (self):
+        return(f"O {self.nome} late!")
+
+c1 =  Cachorro ('Totó')
+
+print(f"{c1.fala()}")
